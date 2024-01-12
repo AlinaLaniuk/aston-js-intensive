@@ -39,7 +39,8 @@
 
 **Шаг 2**
 
-![image](https://github.com/AlinaLaniuk/aston-js-intensive/assets/101401177/86612159-3561-4e6b-9f5e-8f2cc53bbc8c)
+![image](https://github.com/AlinaLaniuk/aston-js-intensive/assets/101401177/20e74798-cef3-4868-aed8-7a019e26ef33)
+
 
 Здесь залогируются 'a: 1' (функции, разумеется, пройдут через call stack. опускаю это на всех схемах).
 
