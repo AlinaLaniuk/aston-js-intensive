@@ -22,3 +22,25 @@ function logNumbers1(array){
         }, delay * index)
     })
 };
+
+// я сама в ужасе, что написала это, и по-моему выглядит чудовищно. но по мотивом недавнего знакомства с итераторами решила попробовать. пока не глубоко понимаю, как это работает, сделала из интереса
+
+Array.prototype[Symbol.asyncIterator] = function() {
+    const arrayLength = this.length;
+    return {
+      i: 0,
+      next() {
+        if (this.i < arrayLength) {
+          return new Promise((resolve, reject) => {setTimeout(() => {resolve({value: this.i++, done: false})}, 3000)});
+        }
+
+        return Promise.resolve({ done: true });
+      },
+    };
+};
+
+async function logNumbers3(array){
+  for await (let index of array) {
+    console.log(index);
+  }
+}
