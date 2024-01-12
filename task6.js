@@ -2,6 +2,8 @@
 // элемента с задержкой в 3 секунды.
 // Входные данные: [10, 12, 15, 21]
 
+const delay = 3000;
+
 function logNumbers(array){
     let currentIndex = 0;
     const timeoutID = setInterval(() => {
@@ -10,5 +12,13 @@ function logNumbers(array){
         if(currentIndex === array.length){
             clearInterval(timeoutID);
         }
-    }, 3000);
+    }, delay);
+};
+
+function logNumbers1(array){
+    array.forEach((number, index) => {
+        setTimeout(() => {
+            console.log(index);
+        }, delay * index)
+    })
 };
