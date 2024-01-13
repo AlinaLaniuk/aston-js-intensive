@@ -76,6 +76,7 @@
 
 Вторая:
 
-![image](https://github.com/AlinaLaniuk/aston-js-intensive/assets/101401177/9115acda-9a86-452a-9f7e-a3eaabd2433e)
+![image](https://github.com/AlinaLaniuk/aston-js-intensive/assets/101401177/d129852f-37e8-4177-ad48-12ea51f1663b)
+
 
 
